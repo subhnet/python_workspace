@@ -61,7 +61,7 @@ def spider(url, word, maxPages):
     # and we return a set of links from that web page
     # (this is useful for where to go next)
     while numberVisited < maxPages and pagesToVisit != [] and not foundWord:
-        numberVisited = numberVisited +1
+        numberVisited += 1
         # Start from the beginning of our collection of pages to visit:
         url = pagesToVisit[0]
         pagesToVisit = pagesToVisit[1:]

@@ -5,11 +5,10 @@ def F(n):
 
 
 def fib():	
-	a,b = 0,1
-	while True:
-		yield a
-		a,b = b,a+b
-	pass
+    a,b = 0,1
+    while True:
+    	yield a
+    	a,b = b,a+b
 
 while True:
 	inputVal =  raw_input('Enter a number : (N to Exit)')

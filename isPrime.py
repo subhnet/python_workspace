@@ -1,9 +1,6 @@
 def isPrime(num):
 	intnum = int(num)
-	for x in range(2,intnum):
-		if intnum%x==0:
-			return False
-	return True
+	return all(intnum%x != 0 for x in range(2, intnum))
 
 while True:
 	inputVal =  raw_input('Enter a number : (N to Exit)')
